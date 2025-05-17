@@ -14,8 +14,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build_and_deploy_python_worker_starter:
-    name: Build and Deploy Python Worker Starter to Wasmer Edge
+  build_and_deploy_cdn_starter:
+    name: Build and Deploy CDN Starter to Wasmer Edge
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

@@ -1,28 +1,24 @@
-This is a simple [Python](https://python.org/) HTTP server.
+A CDN starter template using [Static Web Server](https://github.com/static-web-server/static-web-server).
+
+> You can follow the full tutorial from [here](https://docs.wasmer.io/edge/tutorials/cdn)
 
 ## Usage
 
-Modify the logic of your simple Python HTTP server in the `src/main.py` file.
+All the static files will be served from the `public` folder, and the static webserver will be configured using the `config.toml` file.
 
-You can run the server with Python with:
-
-```bash
-$ python src/main.py
-```
-
-Or you can also use `wasmer run` to run it locally (check out the [Wasmer install guide](https://docs.wasmer.io/install)):
+You can run the CDN template easily using Wasmer (check out the [install guide](https://docs.wasmer.io/install)):
 
 ```bash
-$ wasmer run . --env PORT=8080
+wasmer run .
 ```
 
-Open [http://localhost:8080](http://localhost:8080) with your browser to see the Python application response.
+Open [http://localhost:8080](http://localhost:8080) with your browser to see the CDN.
 
 ## Deploy on Wasmer Edge
 
-The easiest way to deploy your Python app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
+The easiest way to serve your public assets is to use the [Wasmer Edge](https://wasmer.io/products/edge) as your CDN.
 
-Live example: https://python-worker-wasmer-starter-worker.wasmer.app/
+Live example: https://cdn-wasmer-starter.wasmer.app/
 
 Run this commmand to deploy to Wasmer Edge:
 
